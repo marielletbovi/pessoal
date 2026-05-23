@@ -1,0 +1,132 @@
+{
+    "pasta_origem": "",
+    "pasta_backup": "",
+    "pasta_destino": "",
+    "zerar_negativos": true,
+    "adicionar_respiro": false,
+    "data_invertida": false,
+    "incluir_hora_arquivo": true,
+    "separador_campo": ";",
+    "separador_decimal": ",",
+    "casas_decimais": 4,
+    "custom_filename_active": false,
+    "custom_filename_mask": "[Sample Name]_[Timestamp da Conversão]",
+    "colunas": [
+        {
+            "name": "ID#",
+            "enabled": true,
+            "source": "index"
+        },
+        {
+            "name": "Sample Name",
+            "enabled": true,
+            "source": "metadata",
+            "key": "sample_name"
+        },
+        {
+            "name": "Usuário",
+            "enabled": true,
+            "source": "metadata",
+            "key": "user"
+        },
+        {
+            "name": "Data",
+            "enabled": true,
+            "source": "metadata",
+            "key": "date"
+        },
+        {
+            "name": "Método",
+            "enabled": true,
+            "source": "metadata",
+            "key": "method"
+        },
+        {
+            "name": "Dia",
+            "enabled": true,
+            "source": "metadata",
+            "key": "day"
+        },
+        {
+            "name": "Mês",
+            "enabled": true,
+            "source": "metadata",
+            "key": "month"
+        },
+        {
+            "name": "Hora",
+            "enabled": true,
+            "source": "metadata",
+            "key": "hour"
+        },
+        {
+            "name": "Original Files",
+            "enabled": true,
+            "source": "metadata",
+            "key": "original_file"
+        }
+    ],
+    "produtos": [
+        {
+            "name": "Sacarose",
+            "original_names": [
+                "Sacarose",
+                "Sucrose"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "Glicose",
+            "original_names": [
+                "Glicose",
+                "Glucose"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "Frutose",
+            "original_names": [
+                "Frutose",
+                "Fructose"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "Manitol",
+            "original_names": [
+                "Manitol",
+                "Mannitol"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "Glicerol",
+            "original_names": [
+                "Glicerol",
+                "Glycerol"
+            ],
+            "enabled": true
+        },
+        {
+            "name": "Etanol",
+            "original_names": [
+                "Etanol",
+                "Ethanol"
+            ],
+            "enabled": true
+        }
+    ],
+    "formulas": [
+        {
+            "name": "AR",
+            "expression": "Glicose + Frutose",
+            "enabled": true
+        },
+        {
+            "name": "ART",
+            "expression": "(Sacarose / 0.95) + Glicose + Frutose",
+            "enabled": true
+        }
+    ],
+    "extras": []
+}
